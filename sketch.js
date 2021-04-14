@@ -14,7 +14,10 @@ function draw() {
   //the distance of the x position of the sprites(fixedRect.x-movingRect.x=50) is 
   //equal to the half of the width of the both sprites(movingrect.width/2+fixedrect.width/2=50)
   if(fixedRect.x-movingRect.x<movingRect.width/2+fixedRect.width/2&&
-    movingRect.x-fixedRect.x<movingRect.width/2+fixedRect.width/2)
+    movingRect.x-fixedRect.x<movingRect.width/2+fixedRect.width/2&&
+    fixedRect.y-movingRect.y<movingRect.height/2+fixedRect.height/2&&
+    movingRect.y-fixedRect.y<movingRect.height/2+fixedRect.height)
+
   {
     movingRect.shapeColor="red";
     fixedRect.shapeColor="red";
